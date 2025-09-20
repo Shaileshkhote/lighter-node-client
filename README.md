@@ -1,4 +1,4 @@
-# @lighter/node-client
+# lighter-node-client
 
 A complete TypeScript client for the Lighter trading platform with native Go signer bindings via FFI.
 
