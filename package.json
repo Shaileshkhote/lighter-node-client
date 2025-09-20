@@ -1,0 +1,61 @@
+{
+    "name": "lighter-node-client",
+    "version": "1.0.0",
+    "description": "Node.js TypeScript client for Lighter.xyz with native Go signer bindings via FFI",
+    "main": "dist/index.js",
+    "types": "dist/index.d.ts",
+    "files": [
+        "dist/**/*",
+        "signers/**/*",
+        "README.md",
+        "LICENSE"
+    ],
+    "scripts": {
+        "build": "tsc",
+        "prepublishOnly": "npm run build",
+        "test": "npx ts-node examples/test.ts",
+        "test:orders": "npx ts-node examples/test-orders.ts",
+        "test:account": "npx ts-node examples/test-account.ts",
+        "test:pools": "npx ts-node examples/test-pools.ts",
+        "test:auth": "npx ts-node examples/test-auth.ts"
+    },
+    "keywords": [
+        "lighter",
+        "trading",
+        "crypto",
+        "typescript",
+        "defi",
+        "signer",
+        "ffi"
+    ],
+    "author": "Lighter Team",
+    "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/Shaileshkhote/lighter-node-client.git"
+    },
+    "homepage": "https://github.com/Shaileshkhote/lighter-node-client#readme",
+    "bugs": {
+        "url": "https://github.com/Shaileshkhote/lighter-node-client/issues"
+    },
+    "engines": {
+        "node": ">=16.0.0"
+    },
+    "os": [
+        "darwin",
+        "linux"
+    ],
+    "cpu": [
+        "x64",
+        "arm64"
+    ],
+    "dependencies": {
+        "koffi": "^2.8.0",
+        "process": "^0.11.10"
+    },
+    "devDependencies": {
+        "@types/node": "^20.0.0",
+        "ts-node": "^10.9.0",
+        "typescript": "^5.0.0"
+    }
+}

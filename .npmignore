@@ -1,0 +1,15 @@
+# Source files
+src/
+examples/
+*.ts
+tsconfig.json
+
+# Development files
+.git/
+.gitignore
+node_modules/
+*.log
+
+# Keep only built files and binaries
+!dist/
+!signers/
